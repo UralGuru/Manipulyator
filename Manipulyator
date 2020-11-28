@@ -16,8 +16,8 @@ namespace Manipulation
             float elbowY = shoulderY + Manipulator.Palm * (float)Math.Sin(shoulder + Math.PI + elbow);
             var wristPos = new PointF(elbowX, elbowY);
 
-            float wristX = elbowX + Manipulator.Forearm * (float)Math.Cos(wrist + Math.PI + elbow);
-            float wristY = elbowY + Manipulator.Forearm * (float)Math.Sin(wrist + Math.PI + elbow);
+            float wristX = elbowX + Manipulator.Forearm * (float)Math.Cos(shoulder + Math.PI + elbow + Math.PI + wrist);
+            float wristY = elbowY + Manipulator.Forearm * (float)Math.Sin(shoulder + Math.PI + elbow + Math.PI + wrist);
             var palmEndPos = new PointF(wristX, wristY);
             
             
