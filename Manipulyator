@@ -36,7 +36,7 @@ namespace Manipulation
     {
         public static double Distance(PointF a, PointF b)
         {
-            double dx = b.X - a.Y;
+            double dx = b.X - a.X;
             double dy = b.Y - a.Y;
             return Math.Sqrt(dx * dx + dy * dy);
         }
