@@ -52,9 +52,9 @@ namespace Manipulation
             Assert.AreEqual(3, joints.Length);
             Assert.AreEqual(palmEndX, joints[2].X, 1e-5, "palm endX");
             Assert.AreEqual(palmEndY, joints[2].Y, 1e-5, "palm endY");
-            Assert.AreEqual(Manipulator.UpperArm, Distance(joints[0], new PointF(0,0)),1e-5, "upper arm length");
-            Assert.AreEqual(Manipulator.Palm, Distance(joints[2], joints[1]), 1e-5, "upper arm length");
-            Assert.AreEqual(Manipulator.Forearm, Distance(joints[1], joints[0]), 1e-5, "upper arm length");
+            Assert.AreEqual(Manipulator.UpperArm, Distance(joints[0], new PointF(0,0)),1e-5, "upper");
+            Assert.AreEqual(Manipulator.Palm, Distance(joints[2], joints[1]), 1e-5, "arm");
+            Assert.AreEqual(Manipulator.Forearm, Distance(joints[1], joints[0]), 1e-5, "length");
         }
     }
 }
